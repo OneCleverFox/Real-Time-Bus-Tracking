@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+    #map-container {
+    width: 70%;
+    }
+    #info-container {
+    width: 27%;
+    }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #map-container {
+    width: 70%;
+    }
+    #info-container {
+    width: 25%;
+    }
+    }
+    
+    @media screen and (max-width: 767px) {
+    #map-container {
+    width: 50%;
+    }
+    #info-container {    
+    width: 15%;    
+    }
+    }
+    

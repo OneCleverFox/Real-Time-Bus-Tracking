@@ -1,0 +1,59 @@
+#map-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+}
+  
+#map {
+    width: 100%;
+    height: 100%;
+}
+  
+  
+#form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+  #form-container label {
+    margin-right: 10px;
+}
+  
+ 
+  #info-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 27%;
+    padding: -15px;
+    overflow: auto;
+  }
+  
+  #train-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #train-info-container h2 {
+    margin-bottom: 10px;
+  }
+  
+  #train-info {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #train-info li {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  
