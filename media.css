@@ -1,27 +1,70 @@
+/* Media Queries for screens larger than 1024px */
 @media screen and (min-width: 1024px) {
+
+    /* Map Information */
     #map-container {
-    width: 70%;
-    }
-    #info-container {
-    width: 27%;
-    }
+    width: 60%;
     }
     
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #info-container {
+    width: 30%;
+    padding: 15px;
+    }
+    
+    /* Train Information */
+    #form-container {
+    margin-bottom: 30px;
+    }
+    
+    }
+    
+    /* Media Queries for screens larger than 768px and smaller than 1024px */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    /* Map Information */
     #map-container {
     width: 70%;
     }
+    
     #info-container {
     width: 25%;
-    }
+    padding: 10px;
     }
     
+    /* Train Information */
+    #form-container {
+    margin-bottom: 25px;
+    }
+    
+    }
+    
+    /* Media Queries for screens smaller than 768px */
     @media screen and (max-width: 767px) {
+    
+    /* Map Information */
     #map-container {
-    width: 50%;
-    }
-    #info-container {    
-    width: 15%;    
-    }
+    width: 100%;
     }
     
+    #info-container {
+    position: static;
+    width: 100%;
+    padding: 15px;
+    }
+    
+    /* Train Information */
+    #form-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+    }
+    
+    }
+    
+    /* Media Queries for Weather App */
+    @media screen and (max-width: 480px) {
+    
+    input {
+    min-width: 250px;
+    }
+    
+    }

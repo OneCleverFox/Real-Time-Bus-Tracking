@@ -1,59 +1,119 @@
+/*------Map Informations-------*/
+
 #map-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 70%;
 }
-  
+
 #map {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-  
-  
+
+/*------Train Informations-------*/
+
 #form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 1; /* höher als der train-info-container */
 }
-  
-  #form-container label {
-    margin-right: 10px;
+
+#form-container label {
+  margin-right: 10px;
 }
-  
- 
-  #info-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 27%;
-    padding: -15px;
-    overflow: auto;
-  }
-  
-  #train-info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #train-info-container h2 {
-    margin-bottom: 10px;
-  }
-  
-  #train-info {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #train-info li {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  
+
+#info-container {
+  position: absolute;
+  top: 10px; /* nicht 0, um Abstand vom oberen Rand zu haben */
+  right: 0; /* Container an den rechten Rand des Bildschirms verschieben */
+  bottom: 0;
+  width: 27%;
+  padding: -15px;
+  overflow: auto;
+  z-index: 0; /* niedriger als der form-container */
+}
+
+#train-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#train-info-container h2 {
+  margin-bottom: 10px;
+}
+
+#train-info {
+  list-style-type: none;
+  padding: 0;
+}
+
+#train-info li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/*-------Weather App-------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #25282A;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-family: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.weather {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.weather h2 {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+} 
+
+#form {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#main {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
