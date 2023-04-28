@@ -1,6 +1,6 @@
 const stationId = "8098360";
-  const apiKey = "6a0010ab1a1f6c80ac0e716cb7b78dd8";
-  const clientId = "71c347e5d3ba42482aefd9fec6327b87";
+  const apiKey = "YOUR_API_KEY_HERE";
+  const clientId = "YOUR_ClientID_HERE";
 
   getTrainDepartures(stationId, apiKey, clientId);
 
